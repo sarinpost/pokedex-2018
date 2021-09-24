@@ -1,0 +1,128 @@
+.font-header {
+    font-family: 'Gaegu';
+    font-weight: 700;
+}
+
+/* My pokedex */
+.nav-bottom-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-bottom {
+    background-color: #eb4d4b;
+    height: 50px;
+    width: "100%";
+    text-align: center;
+    position: relative;
+}
+
+.button-add-card {
+    border-radius: 50% 50%;
+    height: 75px;
+    width: 75px;
+    background-color: #eb4d4b;
+    border: none;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.my-pokedex-card-list {
+    padding: 20px;
+    display: flex;
+    overflow-y: scroll;
+    max-height: 600px;
+    flex-wrap: wrap;
+}
+
+.my-pokedex-card-container {
+    width: 50%;
+}
+
+/* Search */
+.search-container {
+    position: relative;
+}
+
+.card-list-modal {
+    height: 420px;
+    overflow-y: scroll;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.input-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+input[type="text"] {
+    font-size: 24px !important;
+    font-family: 'Gaegu';
+    width: calc(100% - 10px);
+}
+
+.img-search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card {
+    background-color: #f3f4f7;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    box-shadow: 0px 0px 5px #d5d6dc;
+}
+
+.add-button {
+    display: none;
+    color: #eb4d4b;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.card:hover + .add-button,
+.add-button:hover {
+    display: block;
+}
+
+/* Progress */
+
+progress {
+    border-radius: 7px;
+    width: 100%;
+    height: 20px;
+    /* margin-left: -11.5%; */
+    /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); */
+}
+progress::-webkit-progress-bar {
+    background-color: #dcdcdf;
+    border-radius: 50px;
+}
+progress::-webkit-progress-value {
+    background-color: #ef6315;
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 5px 3px #ef6315; */
+}
+progress::-moz-progress-bar {
+    /* style rules */
+}
